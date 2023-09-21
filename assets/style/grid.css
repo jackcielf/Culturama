@@ -1,0 +1,25 @@
+.banner {
+    display: grid;
+    gap: 1rem;
+}
+
+.banner:nth-child(1) {
+    grid-column: 1/3;
+}
+
+.banner:nth-child(4) {
+grid-column: 2/3;
+grid-row: 2/4;
+}
+
+@media (min-width: 720px) {
+    .banner:nth-child(1) {
+        grid-column: 1/2; /* Na coluna 1 vai ocupar 2 linhas */
+        grid-column: 1/3; /* Ocupa a coluna 1, no tatal de 3 colunas */
+    }
+    
+    .banner:nth-child(4) {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    }
+}
